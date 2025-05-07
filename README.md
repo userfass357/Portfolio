@@ -27,4 +27,4 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-логин/portfolio_site_v2.git
+   git clone https://github.com/userfass357/Portfolio.git
