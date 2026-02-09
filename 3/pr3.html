@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Практическая работа №3 — Мини-игры</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Мини-игры — Практическая работа №3</h1>
+    <nav>
+      <button data-view="reaction" class="nav-btn">Игра на реакцию</button>
+      <button data-view="tictactoe" class="nav-btn">Крестики-нолики</button>
+      <button data-view="maze" class="nav-btn">Лабиринт</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Reaction Game -->
+    <section id="reaction" class="view">
+      <h2>Игра на скорость реакции</h2>
+      <div class="controls">
+        <button id="react-start">Старт</button>
+        <button id="react-reset">Сброс</button>
+        <div>Время: <span id="react-timer">30</span>s</div>
+        <div>Успешные нажатия: <span id="react-score">0</span></div>
+        <div>Среднее время реакции: <span id="react-avg">—</span> мс</div>
+      </div>
+      <div id="react-area" class="play-area">
+        <!-- button will be positioned here -->
+      </div>
+    </section>
+
+    <!-- TicTacToe -->
+    <section id="tictactoe" class="view" style="display:none">
+      <h2>Крестики-нолики</h2>
+      <div class="ttt-controls">
+        <button id="ttt-reset">Новая игра</button>
+        <label><input type="checkbox" id="ttt-ai"> Играть против компьютера</label>
+        <div>Ход: <span id="ttt-turn">X</span></div>
+        <div>Счёт — X: <span id="score-x">0</span> O: <span id="score-o">0</span></div>
+        <div id="ttt-msg" class="msg"></div>
+      </div>
+      <div id="ttt-board" class="ttt-board"></div>
+    </section>
+
+    <!-- Maze -->
+    <section id="maze" class="view" style="display:none">
+      <h2>Лабиринт</h2>
+      <div class="maze-controls">
+        <button id="maze-reset">Сброс</button>
+        <div>Время: <span id="maze-timer">0</span>s</div>
+        <div id="maze-msg" class="msg"></div>
+      </div>
+      <div id="maze-board" class="maze-board"></div>
+      <p class="hint">Используйте стрелки для управления.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

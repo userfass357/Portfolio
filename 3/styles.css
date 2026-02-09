@@ -1,0 +1,19 @@
+:root{--accent:#1e90ff;--bg:#f7f7fb;--surface:#ffffff}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Arial}
+body{margin:0;background:var(--bg);color:#111}
+header{padding:16px;background:var(--surface);display:flex;align-items:center;justify-content:space-between;gap:12px}
+nav{display:flex;gap:8px}
+.nav-btn{padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:white;cursor:pointer}
+.view{padding:18px}
+.controls, .ttt-controls, .maze-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.play-area{height:320px;background:#e9eef8;border-radius:8px;position:relative;overflow:hidden}
+#react-area .target{position:absolute;padding:8px 12px;background:var(--accent);color:#fff;border-radius:6px;border:none;cursor:pointer}
+.ttt-board{display:grid;grid-template-columns:repeat(3,100px);gap:6px}
+.ttt-cell{width:100px;height:100px;display:flex;align-items:center;justify-content:center;background:var(--surface);font-size:36px;border-radius:6px;border:1px solid #ccc;cursor:pointer}
+.maze-board{display:grid;grid-template-columns:repeat(10,32px);gap:2px;margin-top:12px}
+.maze-cell{width:32px;height:32px;background:#fff;border:1px solid #ddd}
+.wall{background:#333}
+.player{background:#1e90ff;color:#fff;display:flex;align-items:center;justify-content:center}
+.exit{background:#2ecc71}
+.msg{font-weight:600}
+.hint{margin-top:8px;color:#555}
