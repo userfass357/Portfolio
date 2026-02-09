@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Мой сайт</title>
+    <meta name="description" content="Персональный сайт-портфолио с примерами проектов и достижений">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%234F46E5'>P</text></svg>">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Образование</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="rpg.html" class="nav-link">RPG Планировщик</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Секция 1: Главная -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Привет, я <span class="highlight">Веб-разработчик</span></h1>
+                <div class="typing-wrapper">
+                    <p class="typing-text">Frontend разработчик <span class="separator">|</span> UI дизайнер <span class="separator">|</span> Студент</p>
+                </div>
+                <p class="hero-subtitle">Я создаю красивые и функциональные веб-приложения с использованием современных технологий</p>
+                
+                <div class="hero-image">
+                    <img src="https://tou.edu.kz/student_cabinet/stud_photo.php?id=149475" alt="Аватар профиля" class="avatar">
+                </div>
+
+                <button class="btn btn-primary" onclick="scrollToSection('contacts')">Связаться со мной</button>
+            </div>
+        </section>
+
+        <!-- Секция 2: Навыки -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Мои навыки</h2>
+            
+            <!-- Hard Skills -->
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Языки программирования</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span class="percentage">10%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java</span>
+                            <span class="percentage">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C</span>
+                            <span class="percentage">40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C++</span>
+                            <span class="percentage">50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Инструменты и технологии</h3>
+                    <div class="tools-list">
+                        <span class="tool-badge">Git</span>
+                        <span class="tool-badge">MySQL</span>
+                        <span class="tool-badge">QT</span>
+                        <span class="tool-badge">Linux</span>
+                        <span class="tool-badge">Docker</span>
+                        <span class="tool-badge">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Специальный навыки</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Объектно-ориентированное программирование</li>
+                        <li><i class="fas fa-check"></i> Паттерны проектирования</li>
+                        <li><i class="fas fa-check"></i> Разработка настольных приложений (QT)</li>
+                        <li><i class="fas fa-check"></i> Разработка Android-приложений</li>
+                        <li><i class="fas fa-check"></i> HTTP и REST API</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Мягкие навыки</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Командная работа</li>
+                        <li><i class="fas fa-check"></i> Критическое мышление</li>
+                        <li><i class="fas fa-check"></i> Коммуникабельность</li>
+                        <li><i class="fas fa-check"></i> Проблемное мышление</li>
+                        <li><i class="fas fa-check"></i> Управление временем</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Языки</h3>
+                    <div class="language-item">
+                        <span>Русский</span>
+                        <div class="dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span>Казахский</span>
+                        <div class="dots">
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span>Английский</span>
+                        <div class="dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Образование -->
+        <section id="education" class="education">
+            <h2 class="section-title">Образование</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Факультет Computer Science </h3>
+                        <p class="institution">Казахский национальный университет имени Торайгырова</p>
+                        <p class="period">2023 — 2026</p>
+                        <p class="description">Специализация 6B06104-Computer Science</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ПВКУ</h3>
+                        <p class="institution">Техник программист</p>
+                        <p class="period">2020 — 2023</p>
+                        <p class="description">Техник программист по прокладке и настройке сетей</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Курсы по веб-разработке</h3>
+                        <p class="institution">Coursera - Responsive Web Design</p>
+                        <p class="period">2023</p>
+                        <p class="description">Углубленное изучение современного веб-дизайна и адаптивной верстки с использованием CSS Grid и Flexbox.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Секция 5: Проекты -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <p>EduBot — это Telegram-бот, личного кабинета студента</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EduBot</h3>
+                        <p>Telegram-бот, выполняющий функции личного кабинета студента и консультанта для абитуриентов. Бот предоставляет удобный способ взаимодействия с учебным процессом.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> Python, Telegram API, MongoDB, SQLite</p>
+                        <div class="project-links">
+                            <a href="https://github.com/userfass357/EduBot.git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <p>FastAPI-приложение для загрузки документов</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>API DocToSQL</h3>
+                        <p>FastAPI-приложение для загрузки документов и автоматического преобразования их в SQL-таблицы. Поддерживает загрузку PDF, DOCX и XLSX файлов с последующим парсингом и сохранением в базу данных.</p>
+                        <p class="project-tech"><strong>Технологии:</strong> Python, FastAPI, Pandoc, SQLAlchemy</p>
+                        <div class="project-links">
+                            <a href="https://github.com/userfass357/api_doctosql.git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Секция 6: Контакты -->
+        <section id="contacts" class="contacts">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contacts-container">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="label">Email</p>
+                            <p class="value">differentfromthoseschools@mail.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="label">Локация</p>
+                            <p class="value">Павлодар, Казахстан</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Найдите меня в сети:</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/userfass357" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Отправить сообщение</h3>
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Портфолио. Все права защищены.</p>
+            <p>Разработано с ❤️ на HTML5, CSS3 и JavaScript ES6</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

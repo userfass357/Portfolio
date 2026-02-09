@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Планировщик задач</title>
+    <link rel="stylesheet" href="rpg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="rpg-header">
+        <h1>⚔ RPG Task Manager ⚔</h1>
+        <a class="back-link" href="index.html">← Вернуться в портфолио</a>
+    </header>
+
+    <main class="rpg-main">
+        <section class="character-card">
+            <div class="avatar-select">
+                <img id="avatarImage" src="https://via.placeholder.com/96/8B5CF6/fff?text=:)" alt="avatar">
+                <div class="avatar-options">
+                    <button data-src="https://via.placeholder.com/96/8B5CF6/fff?text=1">1</button>
+                    <button data-src="https://via.placeholder.com/96/F59E0B/fff?text=2">2</button>
+                    <button data-src="https://via.placeholder.com/96/10B981/fff?text=3">3</button>
+                </div>
+            </div>
+            <div class="character-info">
+                <label for="charName">Имя персонажа</label>
+                <input id="charName" placeholder="Введите имя...">
+                <div class="level">Уровень: <span id="level">1</span></div>
+                <div class="xp-row">
+                    <div class="xp-bar">
+                        <div id="xpFill" class="xp-fill" style="width:0%"></div>
+                    </div>
+                    <div class="xp-text"><span id="xpCurrent">0</span>/<span id="xpNeeded">100</span> XP</div>
+                </div>
+                <div id="levelUpNotice" class="levelup">Уровень повышен!</div>
+            </div>
+        </section>
+
+        <section class="task-creator">
+            <h2>📝 Новая задача</h2>
+            <form id="taskForm">
+                <input id="taskTitle" placeholder="Название задачи" required>
+                <textarea id="taskDesc" placeholder="Описание (опционально)"></textarea>
+                <div class="difficulty">
+                    <label><input type="radio" name="difficulty" value="10" checked> Лёгкая (+10 XP)</label>
+                    <label><input type="radio" name="difficulty" value="25"> Средняя (+25 XP)</label>
+                    <label><input type="radio" name="difficulty" value="50"> Сложная (+50 XP)</label>
+                    <label><input type="radio" name="difficulty" value="100"> Эпическая (+100 XP)</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Добавить задачу</button>
+                    <button type="button" id="resetBtn" class="btn ghost">Сбросить прогресс</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="tasks-list">
+            <h2>⚡ Активные задачи</h2>
+            <ul id="activeList" class="list"></ul>
+
+            <h2>✅ Выполненные</h2>
+            <ul id="doneList" class="list done"></ul>
+        </section>
+
+        <aside class="stats">
+            <h3>📊 Статистика</h3>
+            <p>Выполнено задач: <span id="statsDone">0</span></p>
+            <p>Всего опыта: <span id="statsXP">0</span></p>
+            <p>Дата создания: <span id="createdAt">—</span></p>
+        </aside>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
